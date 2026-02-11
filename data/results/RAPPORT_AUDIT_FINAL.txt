@@ -1,0 +1,78 @@
+===========================================================================
+RAPPORT D'AUDIT NLP : ALIGNEMENT BUDGÉTAIRE SND30 (2024-2025)
+Généré le : 11/02/2026 à 23:43
+===========================================================================
+
+
+1. SYNTHÈSE DE LA VOLUMÉTRIE
+-----------------------------------
+• Articles analysés en 2024 : 101
+• Articles analysés en 2025 : 63
+• Évolution de la structure : Améliorée
+
+
+2. ALIGNEMENT SUR LES PILIERS SND30 (2025)
+-----------------------------------
+Pilier                         | Part (%)   | Variation (Abs)
+-----------------------------------------------------------------
+Transformation structurelle    | 7.94      % | ▼ (-2)
+Capital humain                 | 3.17      % | ▼ (-5)
+Gouvernance                    | 7.94      % | ▲ (2)
+Développement régional         | 6.35      % | ▼ (-2)
+Autre                          | 74.6      % | ▼ (-31)
+
+
+3. ANALYSE DU GLISSEMENT SÉMANTIQUE (MÉTHODE DYNAMIQUE)
+-----------------------------------
+• Similarité moyenne globale : 0.7329
+• Seuil de rupture calculé   : 0.6108
+• TAUX DE CHANGEMENT REEL    : 16.30%
+• Nombre de ruptures nettes  : 88 phrases
+
+Exemples de ruptures sémantiques (les plus faibles similarités) :
+  Rupture 1 (Similarité: 0.424):
+    [2024] : c
+b) les frais d'inscription et de formation au sein des centres multifonctionnels de
+r
+promotion des jeunes de référenc...
+    [2025] : la régularisation dans le cadre du prfv s'effectue par le biais d'une
+communication volontaire.
+r
+(5)...
+
+  Rupture 2 (Similarité: 0.445):
+    [2024] : lorsqu'elles sont placées l'une et l'autre dans les conditions définies au point a. ci-dessus,
+p
+sous le contrôle d'une ...
+    [2025] : - d'une manière habituelle, se livre ou prête
+son concours, même à titre accessoire,...
+
+  Rupture 3 (Similarité: 0.452):
+    [2024] : ux de couverture 1 478000 1478000
+médiatiques
+médias publics et à
+capitaux privés c
+accroitre l'offre
+d'information
+pour...
+    [2025] : ledit acte est rendu public par tous les moyens de
+communication....
+
+  Rupture 4 (Similarité: 0.459):
+    [2024] : - par des manœuvres de toute nature fait obstaccle à la mise en œuvre du dispositif de suivi
+électronique de la facturat...
+    [2025] : - les retraits effectués à partir des plateformes électroniques des jeux de hasard et
+de divertissement....
+
+  Rupture 5 (Similarité: 0.468):
+    [2024] : -après versées au cours de l'année c fiscale écoulée:
+a)...
+    [2025] : - au plus tard le 31 octobre de chaque année pour les autres particuliers....
+
+4. CONCLUSION DE L'AUDIT
+-----------------------------------
+⚠ OBSERVATION : Le budget reste fortement technique (74% d'articles 'Autre').
+✅ DYNAMISME : Le taux de changement de 16.30% indique une
+   actualisation significative des priorités dans la Loi de Finances 2025.
+
+===========================================================================

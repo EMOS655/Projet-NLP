@@ -1,0 +1,51 @@
+{
+  "piliers_stats": {
+    "Transformation structurelle": {
+      "2024": 7,
+      "2025": 5,
+      "Variation_Absolue": -2,
+      "Variation_Pourcentage": -28.57142857142857,
+      "Part_2024_%": 6.93,
+      "Part_2025_%": 7.94
+    },
+    "Capital humain": {
+      "2024": 7,
+      "2025": 2,
+      "Variation_Absolue": -5,
+      "Variation_Pourcentage": -71.42857142857143,
+      "Part_2024_%": 6.93,
+      "Part_2025_%": 3.17
+    },
+    "Gouvernance": {
+      "2024": 3,
+      "2025": 5,
+      "Variation_Absolue": 2,
+      "Variation_Pourcentage": 66.66666666666666,
+      "Part_2024_%": 2.97,
+      "Part_2025_%": 7.94
+    },
+    "Développement régional": {
+      "2024": 6,
+      "2025": 4,
+      "Variation_Absolue": -2,
+      "Variation_Pourcentage": -33.33333333333333,
+      "Part_2024_%": 5.94,
+      "Part_2025_%": 6.35
+    },
+    "Autre": {
+      "2024": 78,
+      "2025": 47,
+      "Variation_Absolue": -31,
+      "Variation_Pourcentage": -39.743589743589745,
+      "Part_2024_%": 77.23,
+      "Part_2025_%": 74.6
+    }
+  },
+  "metriques_globales": {
+    "total_articles_2024": 101,
+    "total_articles_2025": 63,
+    "concentration_index_2024": 6104.627200000001,
+    "concentration_index_2025": 5741.618599999999,
+    "indice_diversification_evol": "Améliorée"
+  }
+}

@@ -357,7 +357,7 @@ PLOT_STYLE = "seaborn-v0_8-darkgrid"
 
 # Streamlit settings
 DASHBOARD_TITLE = "Baromètre de Glissement Sémantique - Lois de Finances Cameroun"
-DASHBOARD_SUBTITLE = "Analyse NLP des Lois de Finances 2024-2026 vs SND30"
+DASHBOARD_SUBTITLE = "Analyse NLP des Lois de Finances 2024-2025 vs SND30"
 DASHBOARD_ICON = "📊"
 
 # Update frequency
@@ -592,3 +592,5 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"Note: Installez pandas pour créer le template automatiquement")
         print(f"      pip install pandas")
+
+DEVICE = detect_device()
