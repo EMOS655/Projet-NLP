@@ -1,0 +1,817 @@
+{
+  "year": 2024,
+  "item_type": "articles",
+  "total_items": 57,
+  "classification_method": "camembert-similarity",
+  "model_name": "camembert-base",
+  "confidence_threshold": 0.5,
+  "pillar_distribution": {
+    "Capital humain": 41,
+    "Autre": 16
+  },
+  "classified_items": [
+    {
+      "texte": "Article 333",
+      "index": 0,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.85945725440979,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8483535051345825,
+        "Capital humain": 0.85945725440979,
+        "Gouvernance": 0.8335421681404114,
+        "Développement régional": 0.8518941402435303,
+        "Autre": 0.830453634262085
+      }
+    },
+    {
+      "texte": "Article 465",
+      "index": 1,
+      "pilier_snd30": "Autre",
+      "confiance": 0.806796669960022,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8189489841461182,
+        "Capital humain": 0.8310204744338989,
+        "Gouvernance": 0.801529586315155,
+        "Développement régional": 0.822920560836792,
+        "Autre": 0.806796669960022
+      }
+    },
+    {
+      "texte": "Article 78",
+      "index": 2,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8610175251960754,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8483186960220337,
+        "Capital humain": 0.8610175251960754,
+        "Gouvernance": 0.8342115879058838,
+        "Développement régional": 0.8485257625579834,
+        "Autre": 0.8249108791351318
+      }
+    },
+    {
+      "texte": "Article 7",
+      "index": 3,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8594176769256592,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8477895855903625,
+        "Capital humain": 0.8594176769256592,
+        "Gouvernance": 0.8321439027786255,
+        "Développement régional": 0.8481512069702148,
+        "Autre": 0.8261233568191528
+      }
+    },
+    {
+      "texte": "Article 8",
+      "index": 4,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8589642643928528,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8473812937736511,
+        "Capital humain": 0.8589642643928528,
+        "Gouvernance": 0.8310599327087402,
+        "Développement régional": 0.8468512296676636,
+        "Autre": 0.824283242225647
+      }
+    },
+    {
+      "texte": "Article 18",
+      "index": 5,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8583334684371948,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8459466099739075,
+        "Capital humain": 0.8583334684371948,
+        "Gouvernance": 0.8301331996917725,
+        "Développement régional": 0.845639705657959,
+        "Autre": 0.8232618570327759
+      }
+    },
+    {
+      "texte": "Article 19",
+      "index": 6,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8573572039604187,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8453153371810913,
+        "Capital humain": 0.8573572039604187,
+        "Gouvernance": 0.8298882842063904,
+        "Développement régional": 0.84590744972229,
+        "Autre": 0.823096513748169
+      }
+    },
+    {
+      "texte": "Article 21",
+      "index": 7,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8581230044364929,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.84690260887146,
+        "Capital humain": 0.8581230044364929,
+        "Gouvernance": 0.8314441442489624,
+        "Développement régional": 0.8472442626953125,
+        "Autre": 0.8242777585983276
+      }
+    },
+    {
+      "texte": "Article 22",
+      "index": 8,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.846832275390625,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.836015522480011,
+        "Capital humain": 0.846832275390625,
+        "Gouvernance": 0.8221818208694458,
+        "Développement régional": 0.8345695734024048,
+        "Autre": 0.815803050994873
+      }
+    },
+    {
+      "texte": "Article 25",
+      "index": 9,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8590255379676819,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8467768430709839,
+        "Capital humain": 0.8590255379676819,
+        "Gouvernance": 0.8317954540252686,
+        "Développement régional": 0.8470451831817627,
+        "Autre": 0.8235663175582886
+      }
+    },
+    {
+      "texte": "Article 27",
+      "index": 10,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8585437536239624,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8471341133117676,
+        "Capital humain": 0.8585437536239624,
+        "Gouvernance": 0.8309910297393799,
+        "Développement régional": 0.847342848777771,
+        "Autre": 0.8242058753967285
+      }
+    },
+    {
+      "texte": "Article 33",
+      "index": 11,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8560274243354797,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.84364914894104,
+        "Capital humain": 0.8560274243354797,
+        "Gouvernance": 0.8283203840255737,
+        "Développement régional": 0.8446773290634155,
+        "Autre": 0.8231501579284668
+      }
+    },
+    {
+      "texte": "Article 34",
+      "index": 12,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8554764986038208,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.842750608921051,
+        "Capital humain": 0.8554764986038208,
+        "Gouvernance": 0.8285226821899414,
+        "Développement régional": 0.8437126874923706,
+        "Autre": 0.8222939968109131
+      }
+    },
+    {
+      "texte": "Article 35",
+      "index": 13,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8587962985038757,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8470380902290344,
+        "Capital humain": 0.8587962985038757,
+        "Gouvernance": 0.8308848142623901,
+        "Développement régional": 0.8479378819465637,
+        "Autre": 0.8246068358421326
+      }
+    },
+    {
+      "texte": "Article 42",
+      "index": 14,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.856486976146698,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8437556028366089,
+        "Capital humain": 0.856486976146698,
+        "Gouvernance": 0.8284835815429688,
+        "Développement régional": 0.8448046445846558,
+        "Autre": 0.8218069076538086
+      }
+    },
+    {
+      "texte": "Article 44",
+      "index": 15,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8538211584091187,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8414247035980225,
+        "Capital humain": 0.8538211584091187,
+        "Gouvernance": 0.8277167081832886,
+        "Développement régional": 0.8427063822746277,
+        "Autre": 0.8201377391815186
+      }
+    },
+    {
+      "texte": "Article 53",
+      "index": 16,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8585736751556396,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8463287353515625,
+        "Capital humain": 0.8585736751556396,
+        "Gouvernance": 0.8311363458633423,
+        "Développement régional": 0.8471478223800659,
+        "Autre": 0.8253911733627319
+      }
+    },
+    {
+      "texte": "Article 56",
+      "index": 17,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8599162697792053,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8477025032043457,
+        "Capital humain": 0.8599162697792053,
+        "Gouvernance": 0.8328714370727539,
+        "Développement régional": 0.8488280177116394,
+        "Autre": 0.826118528842926
+      }
+    },
+    {
+      "texte": "Article 65",
+      "index": 18,
+      "pilier_snd30": "Autre",
+      "confiance": 0.8154584169387817,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8313179612159729,
+        "Capital humain": 0.842788815498352,
+        "Gouvernance": 0.8187689781188965,
+        "Développement régional": 0.8288536071777344,
+        "Autre": 0.8154584169387817
+      }
+    },
+    {
+      "texte": "Article 70",
+      "index": 19,
+      "pilier_snd30": "Autre",
+      "confiance": 0.767806887626648,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.7758564949035645,
+        "Capital humain": 0.7864890694618225,
+        "Gouvernance": 0.7578873634338379,
+        "Développement régional": 0.7701208591461182,
+        "Autre": 0.767806887626648
+      }
+    },
+    {
+      "texte": "Article 85",
+      "index": 20,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8611721992492676,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8493080735206604,
+        "Capital humain": 0.8611721992492676,
+        "Gouvernance": 0.8343557715415955,
+        "Développement régional": 0.8500072956085205,
+        "Autre": 0.8270282745361328
+      }
+    },
+    {
+      "texte": "Article 69",
+      "index": 21,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8572796583175659,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8442037105560303,
+        "Capital humain": 0.8572796583175659,
+        "Gouvernance": 0.8297555446624756,
+        "Développement régional": 0.8443734645843506,
+        "Autre": 0.8229423761367798
+      }
+    },
+    {
+      "texte": "Article 87",
+      "index": 22,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.853204071521759,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.84104323387146,
+        "Capital humain": 0.853204071521759,
+        "Gouvernance": 0.828415036201477,
+        "Développement régional": 0.8413956165313721,
+        "Autre": 0.8204540014266968
+      }
+    },
+    {
+      "texte": "Article 48",
+      "index": 23,
+      "pilier_snd30": "Autre",
+      "confiance": 0.807025134563446,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8204902410507202,
+        "Capital humain": 0.834202766418457,
+        "Gouvernance": 0.8050068020820618,
+        "Développement régional": 0.82160884141922,
+        "Autre": 0.807025134563446
+      }
+    },
+    {
+      "texte": "Article 90",
+      "index": 24,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8552007675170898,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8429948091506958,
+        "Capital humain": 0.8552007675170898,
+        "Gouvernance": 0.8274485468864441,
+        "Développement régional": 0.8447855114936829,
+        "Autre": 0.8233358860015869
+      }
+    },
+    {
+      "texte": "Article 46",
+      "index": 25,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8561704158782959,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8431688547134399,
+        "Capital humain": 0.8561704158782959,
+        "Gouvernance": 0.8296944499015808,
+        "Développement régional": 0.8445316553115845,
+        "Autre": 0.8220325112342834
+      }
+    },
+    {
+      "texte": "Article 92",
+      "index": 26,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8504015207290649,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8380258083343506,
+        "Capital humain": 0.8504015207290649,
+        "Gouvernance": 0.8250776529312134,
+        "Développement régional": 0.838408350944519,
+        "Autre": 0.817994236946106
+      }
+    },
+    {
+      "texte": "Article 91",
+      "index": 27,
+      "pilier_snd30": "Autre",
+      "confiance": 0.8178882002830505,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8360927104949951,
+        "Capital humain": 0.8486537933349609,
+        "Gouvernance": 0.823636531829834,
+        "Développement régional": 0.837169885635376,
+        "Autre": 0.8178882002830505
+      }
+    },
+    {
+      "texte": "Article 93",
+      "index": 28,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8574134111404419,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8449478149414062,
+        "Capital humain": 0.8574134111404419,
+        "Gouvernance": 0.830219566822052,
+        "Développement régional": 0.8455519080162048,
+        "Autre": 0.8242836594581604
+      }
+    },
+    {
+      "texte": "Article 74",
+      "index": 29,
+      "pilier_snd30": "Autre",
+      "confiance": 0.8122076988220215,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8259326219558716,
+        "Capital humain": 0.8377723097801208,
+        "Gouvernance": 0.8104037046432495,
+        "Développement régional": 0.8285583257675171,
+        "Autre": 0.8122076988220215
+      }
+    },
+    {
+      "texte": "Article 101",
+      "index": 30,
+      "pilier_snd30": "Autre",
+      "confiance": 0.8009475469589233,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.811914324760437,
+        "Capital humain": 0.8251100182533264,
+        "Gouvernance": 0.7952741384506226,
+        "Développement régional": 0.8153588771820068,
+        "Autre": 0.8009475469589233
+      }
+    },
+    {
+      "texte": "Article 103",
+      "index": 31,
+      "pilier_snd30": "Autre",
+      "confiance": 0.8183481097221375,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8341655731201172,
+        "Capital humain": 0.8469955325126648,
+        "Gouvernance": 0.8233414888381958,
+        "Développement régional": 0.8351620435714722,
+        "Autre": 0.8183481097221375
+      }
+    },
+    {
+      "texte": "Article 128",
+      "index": 32,
+      "pilier_snd30": "Autre",
+      "confiance": 0.791580080986023,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.7993683815002441,
+        "Capital humain": 0.8172274827957153,
+        "Gouvernance": 0.7851241827011108,
+        "Développement régional": 0.8014935255050659,
+        "Autre": 0.791580080986023
+      }
+    },
+    {
+      "texte": "Article 141",
+      "index": 33,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8633649945259094,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8501709699630737,
+        "Capital humain": 0.8633649945259094,
+        "Gouvernance": 0.8364099264144897,
+        "Développement régional": 0.8525710701942444,
+        "Autre": 0.8322614431381226
+      }
+    },
+    {
+      "texte": "Article 142",
+      "index": 34,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8621797561645508,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.849333643913269,
+        "Capital humain": 0.8621797561645508,
+        "Gouvernance": 0.8347293138504028,
+        "Développement régional": 0.8509525060653687,
+        "Autre": 0.8307337760925293
+      }
+    },
+    {
+      "texte": "Article 143",
+      "index": 35,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8626450300216675,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8503440618515015,
+        "Capital humain": 0.8626450300216675,
+        "Gouvernance": 0.8356901407241821,
+        "Développement régional": 0.8522036075592041,
+        "Autre": 0.8320767879486084
+      }
+    },
+    {
+      "texte": "Article 149",
+      "index": 36,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8628540635108948,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.848822832107544,
+        "Capital humain": 0.8628540635108948,
+        "Gouvernance": 0.8390771746635437,
+        "Développement régional": 0.8545325398445129,
+        "Autre": 0.8326530456542969
+      }
+    },
+    {
+      "texte": "Article 225",
+      "index": 37,
+      "pilier_snd30": "Autre",
+      "confiance": 0.7973758578300476,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.810712456703186,
+        "Capital humain": 0.8271883726119995,
+        "Gouvernance": 0.7959145307540894,
+        "Développement régional": 0.8130103349685669,
+        "Autre": 0.7973758578300476
+      }
+    },
+    {
+      "texte": "Article 226",
+      "index": 38,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.865190863609314,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8527143597602844,
+        "Capital humain": 0.865190863609314,
+        "Gouvernance": 0.8396282196044922,
+        "Développement régional": 0.8569223880767822,
+        "Autre": 0.8337542414665222
+      }
+    },
+    {
+      "texte": "Article 231",
+      "index": 39,
+      "pilier_snd30": "Autre",
+      "confiance": 0.7503979206085205,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.7539756298065186,
+        "Capital humain": 0.7591596841812134,
+        "Gouvernance": 0.7315623164176941,
+        "Développement régional": 0.7495636343955994,
+        "Autre": 0.7503979206085205
+      }
+    },
+    {
+      "texte": "Article 239",
+      "index": 40,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8633120059967041,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8509811162948608,
+        "Capital humain": 0.8633120059967041,
+        "Gouvernance": 0.8371626138687134,
+        "Développement régional": 0.8550992012023926,
+        "Autre": 0.8314172029495239
+      }
+    },
+    {
+      "texte": "Article 470",
+      "index": 41,
+      "pilier_snd30": "Autre",
+      "confiance": 0.8255680799484253,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8436727523803711,
+        "Capital humain": 0.8561919927597046,
+        "Gouvernance": 0.8334628939628601,
+        "Développement régional": 0.8442805409431458,
+        "Autre": 0.8255680799484253
+      }
+    },
+    {
+      "texte": "Article 543",
+      "index": 42,
+      "pilier_snd30": "Autre",
+      "confiance": 0.8027923703193665,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8148818016052246,
+        "Capital humain": 0.8268072009086609,
+        "Gouvernance": 0.7978206276893616,
+        "Développement régional": 0.8179157376289368,
+        "Autre": 0.8027923703193665
+      }
+    },
+    {
+      "texte": "Article 341",
+      "index": 43,
+      "pilier_snd30": "Autre",
+      "confiance": 0.8075482845306396,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8191598057746887,
+        "Capital humain": 0.8316094875335693,
+        "Gouvernance": 0.8029615879058838,
+        "Développement régional": 0.8263745903968811,
+        "Autre": 0.8075482845306396
+      }
+    },
+    {
+      "texte": "Article 344",
+      "index": 44,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8536303043365479,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.842951774597168,
+        "Capital humain": 0.8536303043365479,
+        "Gouvernance": 0.8311253786087036,
+        "Développement régional": 0.8477289080619812,
+        "Autre": 0.8250406384468079
+      }
+    },
+    {
+      "texte": "Article 546",
+      "index": 45,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.862462043762207,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.850530207157135,
+        "Capital humain": 0.862462043762207,
+        "Gouvernance": 0.838481068611145,
+        "Développement régional": 0.8537952303886414,
+        "Autre": 0.8310320973396301
+      }
+    },
+    {
+      "texte": "Article 556",
+      "index": 46,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8638039827346802,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.851582407951355,
+        "Capital humain": 0.8638039827346802,
+        "Gouvernance": 0.838219404220581,
+        "Développement régional": 0.8545999526977539,
+        "Autre": 0.8318748474121094
+      }
+    },
+    {
+      "texte": "Article 598",
+      "index": 47,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8581745028495789,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8475886583328247,
+        "Capital humain": 0.8581745028495789,
+        "Gouvernance": 0.8342950344085693,
+        "Développement régional": 0.8499313592910767,
+        "Autre": 0.8276286125183105
+      }
+    },
+    {
+      "texte": "Article 597",
+      "index": 48,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8557894825935364,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8454523086547852,
+        "Capital humain": 0.8557894825935364,
+        "Gouvernance": 0.8327146768569946,
+        "Développement régional": 0.8476591110229492,
+        "Autre": 0.8262856602668762
+      }
+    },
+    {
+      "texte": "Article 601",
+      "index": 49,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8600126504898071,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8469581604003906,
+        "Capital humain": 0.8600126504898071,
+        "Gouvernance": 0.8316298723220825,
+        "Développement régional": 0.849897027015686,
+        "Autre": 0.8285378217697144
+      }
+    },
+    {
+      "texte": "Article 362",
+      "index": 50,
+      "pilier_snd30": "Autre",
+      "confiance": 0.8074926137924194,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8180248737335205,
+        "Capital humain": 0.8293988704681396,
+        "Gouvernance": 0.800432026386261,
+        "Développement régional": 0.8236945867538452,
+        "Autre": 0.8074926137924194
+      }
+    },
+    {
+      "texte": "Article 14",
+      "index": 51,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8572342395782471,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8452326655387878,
+        "Capital humain": 0.8572342395782471,
+        "Gouvernance": 0.8293318748474121,
+        "Développement régional": 0.8444671630859375,
+        "Autre": 0.8242266178131104
+      }
+    },
+    {
+      "texte": "Article 15",
+      "index": 52,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8588063716888428,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8466532230377197,
+        "Capital humain": 0.8588063716888428,
+        "Gouvernance": 0.8306871056556702,
+        "Développement régional": 0.8461712598800659,
+        "Autre": 0.8234409093856812
+      }
+    },
+    {
+      "texte": "Article 58",
+      "index": 53,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8539629578590393,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8412979245185852,
+        "Capital humain": 0.8539629578590393,
+        "Gouvernance": 0.8283131718635559,
+        "Développement régional": 0.8425425887107849,
+        "Autre": 0.8212077617645264
+      }
+    },
+    {
+      "texte": "Article 135",
+      "index": 54,
+      "pilier_snd30": "Autre",
+      "confiance": 0.8051645755767822,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8165369033813477,
+        "Capital humain": 0.8317596912384033,
+        "Gouvernance": 0.801623523235321,
+        "Développement régional": 0.8182681202888489,
+        "Autre": 0.8051645755767822
+      }
+    },
+    {
+      "texte": "Article 59",
+      "index": 55,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8522392511367798,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8395912051200867,
+        "Capital humain": 0.8522392511367798,
+        "Gouvernance": 0.8256821632385254,
+        "Développement régional": 0.8398523926734924,
+        "Autre": 0.8194472789764404
+      }
+    },
+    {
+      "texte": "Article 83",
+      "index": 56,
+      "pilier_snd30": "Capital humain",
+      "confiance": 0.8562827706336975,
+      "methode_classification": "camembert-similarity",
+      "scores_piliers": {
+        "Transformation structurelle": 0.8433317542076111,
+        "Capital humain": 0.8562827706336975,
+        "Gouvernance": 0.8303471803665161,
+        "Développement régional": 0.8452961444854736,
+        "Autre": 0.8248369693756104
+      }
+    }
+  ],
+  "statistics": {
+    "average_confidence": 0.842339579473462,
+    "min_confidence": 0.7503979206085205,
+    "max_confidence": 0.865190863609314
+  }
+}

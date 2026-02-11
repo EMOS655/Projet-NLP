@@ -1,0 +1,42 @@
+{
+  "year_2024": {
+    "Capital humain": 41,
+    "Autre": 16
+  },
+  "year_2025": {
+    "Autre": 14,
+    "Capital humain": 37
+  },
+  "changes": {
+    "Transformation structurelle": {
+      "count_2024": 0,
+      "count_2025": 0,
+      "absolute_change": 0,
+      "percentage_change": 0.0
+    },
+    "Capital humain": {
+      "count_2024": 41,
+      "count_2025": 37,
+      "absolute_change": -4,
+      "percentage_change": 0.6191950464396285
+    },
+    "Gouvernance": {
+      "count_2024": 0,
+      "count_2025": 0,
+      "absolute_change": 0,
+      "percentage_change": 0.0
+    },
+    "Développement régional": {
+      "count_2024": 0,
+      "count_2025": 0,
+      "absolute_change": 0,
+      "percentage_change": 0.0
+    },
+    "Autre": {
+      "count_2024": 16,
+      "count_2025": 14,
+      "absolute_change": -2,
+      "percentage_change": -0.619195046439625
+    }
+  }
+}

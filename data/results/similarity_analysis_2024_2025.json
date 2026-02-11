@@ -1,0 +1,56 @@
+{
+  "documents": {
+    "doc1": "processed_2024.json",
+    "doc2": "processed_2025.json"
+  },
+  "sentence_analysis": {
+    "mean_similarity": 0.700247585773468,
+    "median_similarity": 0.6869678497314453,
+    "min_similarity": 0.374399334192276,
+    "max_similarity": 1.000000238418579,
+    "std_similarity": 0.12711046636104584,
+    "threshold": 0.3,
+    "num_baseline": 738,
+    "num_target": 540,
+    "drifted_count": 0,
+    "drifted_percentage": 0.0,
+    "stable_count": 346,
+    "stable_percentage": 46.883468834688344,
+    "drifted_texts": []
+  },
+  "paragraph_analysis": {
+    "mean_similarity": 0.7274629473686218,
+    "median_similarity": 0.7271475791931152,
+    "min_similarity": 0.3976978063583374,
+    "max_similarity": 0.9885916113853455,
+    "std_similarity": 0.1209394708275795,
+    "threshold": 0.3,
+    "num_baseline": 96,
+    "num_target": 110,
+    "drifted_count": 0,
+    "drifted_percentage": 0.0,
+    "stable_count": 60,
+    "stable_percentage": 62.5,
+    "drifted_texts": []
+  },
+  "article_analysis": {
+    "mean_similarity": 0.7247651219367981,
+    "median_similarity": 0.71183180809021,
+    "min_similarity": 0.5030956864356995,
+    "max_similarity": 0.9994316101074219,
+    "std_similarity": 0.09390735626220703,
+    "threshold": 0.3,
+    "num_baseline": 57,
+    "num_target": 51,
+    "drifted_count": 0,
+    "drifted_percentage": 0.0,
+    "stable_count": 34,
+    "stable_percentage": 59.64912280701754,
+    "drifted_texts": []
+  },
+  "global_assessment": {
+    "overall_similarity": 0.7138552665710449,
+    "semantic_drift_detected": false,
+    "drift_severity": "low"
+  }
+}
