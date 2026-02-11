@@ -143,6 +143,7 @@ class CamemBERTClassifier:
     def classify(self, text: str, return_scores: bool = False) -> Dict:
         """
         Classifie un texte dans un pilier SND30
+        Utilise une combinaison de similarité sémantique et de présence de mots-clés
         
         Args:
             text: Texte à classifier
@@ -151,47 +152,67 @@ class CamemBERTClassifier:
         Returns:
             Dictionnaire avec le pilier prédit et le score de confiance
         """
+        # Import des keywords
+        from config import SND30_KEYWORDS
+        
         # Embedding du texte
         text_embedding = self._get_embedding(text)
+        text_lower = text.lower()
         
-        # Calcul des similarités avec chaque pilier
-        similarities = {}
+        # Calcul des similarités sémantiques avec chaque pilier
+        semantic_similarities = {}
         for pillar, pillar_emb in self.pillar_embeddings.items():
             # Similarité cosinus
             sim = cosine_similarity(
                 text_embedding.reshape(1, -1),
                 pillar_emb.reshape(1, -1)
             )[0][0]
-            similarities[pillar] = float(sim)
+            semantic_similarities[pillar] = float(sim)
         
-        # Pilier avec la plus haute similarité
-        predicted_pillar = max(similarities, key=similarities.get)
-        confidence = similarities[predicted_pillar]
+        # Calcul du score basé sur les mots-clés
+        keyword_scores = {}
+        for pillar in self.pillar_embeddings.keys():
+            if pillar in SND30_KEYWORDS:
+                keywords = SND30_KEYWORDS[pillar]
+                # Compter combien de mots-clés sont présents
+                matches = sum(1 for kw in keywords if kw.lower() in text_lower)
+                # Score normalisé (0 à 1)
+                keyword_scores[pillar] = matches / len(keywords) if keywords else 0
+            else:
+                keyword_scores[pillar] = 0
         
-        # NOUVEAU: Vérifier si la différence est significative
-        # Si tous les scores sont trop proches, classifier comme "Autre"
-        sorted_scores = sorted(similarities.values(), reverse=True)
-        if len(sorted_scores) >= 2:
-            top_score = sorted_scores[0]
-            second_score = sorted_scores[1]
-            score_difference = top_score - second_score
-            
-            # Si la différence est trop faible (< 0.05), c'est probablement "Autre"
-            if score_difference < 0.05 and predicted_pillar != "Autre":
-                # Vérifier si "Autre" a un score compétitif
-                if "Autre" in similarities and similarities["Autre"] > second_score - 0.02:
-                    predicted_pillar = "Autre"
-                    confidence = similarities["Autre"]
+        # Combinaison : 60% sémantique + 40% mots-clés
+        combined_scores = {}
+        for pillar in self.pillar_embeddings.keys():
+            semantic_score = semantic_similarities[pillar]
+            keyword_score = keyword_scores[pillar]
+            # Score combiné
+            combined_scores[pillar] = (0.6 * semantic_score) + (0.4 * keyword_score)
+        
+        # Pilier avec le plus haut score combiné
+        predicted_pillar = max(combined_scores, key=combined_scores.get)
+        confidence = combined_scores[predicted_pillar]
+        
+        # Vérification : Si aucun mot-clé spécifique n'est trouvé dans les 4 piliers SND30,
+        # et que le texte contient des mots-clés "Autre", classifier comme "Autre"
+        snd30_pillars = ["Transformation structurelle", "Capital humain", "Gouvernance", "Développement régional"]
+        snd30_keyword_count = sum(keyword_scores.get(p, 0) for p in snd30_pillars if p in keyword_scores)
+        
+        if snd30_keyword_count == 0 and "Autre" in keyword_scores and keyword_scores["Autre"] > 0:
+            predicted_pillar = "Autre"
+            confidence = combined_scores["Autre"]
         
         # Résultat
         result = {
             "predicted_pillar": predicted_pillar,
             "confidence": confidence,
-            "method": "camembert-similarity"
+            "method": "camembert-hybrid"
         }
         
         if return_scores:
-            result["all_scores"] = similarities
+            result["all_scores"] = combined_scores
+            result["semantic_scores"] = semantic_similarities
+            result["keyword_scores"] = keyword_scores
         
         return result
     
@@ -324,7 +345,7 @@ def classify_budget_items(
         "year": year,
         "item_type": item_type,
         "total_items": len(classified_items),
-        "classification_method": "camembert-similarity",
+        "classification_method": "camembert-hybrid",
         "model_name": MODEL_NAME,
         "confidence_threshold": confidence_threshold,
         "pillar_distribution": pillar_counts,

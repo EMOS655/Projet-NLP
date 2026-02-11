@@ -101,27 +101,33 @@ SND30_KEYWORDS = {
     "Transformation structurelle": [
         "industrialisation", "infrastructure", "énergie", "agriculture",
         "numérique", "innovation", "technologie", "transport", "manufacture",
-        "production", "économie", "secteur primaire", "secteur secondaire"
+        "production", "économie", "secteur primaire", "secteur secondaire",
+        "route", "port", "aéroport", "chemin de fer", "électricité"
     ],
     "Capital humain": [
         "éducation", "santé", "formation", "emploi", "école", "université",
         "hôpital", "social", "compétence", "qualification", "jeunesse",
-        "enseignement", "médical", "ressources humaines"
+        "enseignement", "médical", "ressources humaines", "élève", "étudiant",
+        "médecin", "infirmier", "professeur", "enseignant"
     ],
     "Gouvernance": [
         "administration", "gouvernement", "justice", "sécurité", "institution",
         "réforme", "transparence", "corruption", "décentralisation", "police",
-        "armée", "défense", "magistrature", "état de droit"
+        "armée", "défense", "magistrature", "état de droit", "tribunal",
+        "juge", "gendarmerie", "douane", "douanes", "cemac"
     ],
     "Développement régional": [
         "région", "territoire", "local", "communal", "rural", "urbain",
         "aménagement", "collectivité", "municipalité", "décentralisé",
-        "développement local", "équilibre territorial"
+        "développement local", "équilibre territorial", "commune", "village",
+        "maire", "conseil municipal"
     ],
     "Autre": [
-        "budget", "crédit", "impôt", "fiscalité", "dette", "emprunt",
+        "budget", "crédit", "impôt", "fiscal", "fiscalité", "fiscale", "dette", "emprunt",
         "trésorerie", "comptabilité", "financier", "procédure", "technique",
-        "disposition", "transfert", "nomenclature", "révision"
+        "disposition", "transfert", "nomenclature", "révision", "code",
+        "taux", "taxe", "contribution", "redevance", "prélèvement",
+        "recette", "dépense", "autorisation", "conversion", "devise"
     ]
 }
 
