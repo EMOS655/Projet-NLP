@@ -1,6 +1,6 @@
 # Projet-NLP
 Intelligence artificielle et finance publique
-# 📊 Projet NLP ISE3 - Analyse Sémantique des Lois de Finances du Cameroun
+# Projet NLP ISE3 - Analyse Sémantique des Lois de Finances du Cameroun
 
 **Intelligence Artificielle et Finances Publiques : Utilisation des modèles Transformers pour l'audit sémantique et la classification budgétaire**
 
@@ -10,7 +10,7 @@ Intelligence artificielle et finance publique
 
 ---
 
-## 📋 Table des Matières
+##  Table des Matières
 
 1. [Description du Projet](#-description-du-projet)
 2. [Objectifs](#-objectifs)
@@ -26,7 +26,7 @@ Intelligence artificielle et finance publique
 
 ---
 
-## 📖 Description du Projet
+##  Description du Projet
 
 Ce projet vise à analyser les **Lois de Finances du Cameroun** (2024-2026) en utilisant des techniques avancées de **Traitement du Langage Naturel (NLP)** et des modèles **Transformers**. L'objectif est de mesurer l'évolution des priorités budgétaires de l'État et de vérifier leur alignement avec la **Stratégie Nationale de Développement 2020-2030 (SND30)**.
 
@@ -42,30 +42,30 @@ Existe-t-il un alignement statistiquement significatif entre le discours budgét
 
 ---
 
-## 🎯 Objectifs
+##  Objectifs
 
 Le projet s'articule autour de **trois axes principaux** :
 
-### 1. 📐 Audit Sémantique par Embeddings
+### 1.  Audit Sémantique par Embeddings
 - Utiliser **Sentence-BERT** pour calculer la similarité cosinus entre les articles de loi 2024 et 2025
 - Identifier les ruptures de discours et le "glissement sémantique"
 - Visualiser l'évolution thématique entre les années
 
-### 2. 🏷️ Classification Zero-Shot
+### 2. Classification Zero-Shot
 - Classer automatiquement les lignes de dépenses dans les 4 piliers de la SND30 :
   - **Transformation structurelle**
   - **Capital humain**
   - **Gouvernance**
   - **Développement régional**
 
-### 3. 📊 Analyse Statistique de Conformité
+### 3.  Analyse Statistique de Conformité
 - Corréler les fréquences thématiques extraites avec les montants financiers réels
 - Effectuer des tests de significativité statistique
 - Analyser l'alignement Budget-SND30
 
 ---
 
-## 📁 Structure du Projet
+##  Structure du Projet
 
 ```
 Projet-NLP/
@@ -84,7 +84,7 @@ Projet-NLP/
 │   ├── raw/                           # PDFs bruts (Lois de Finances)
 │   │   ├── Loi_de_Finances_2024.pdf
 │   │   ├── Loi_de_Finances_2025.pdf
-│   │   ├── Perspectives_2026.pdf
+│   │   |
 │   │   └── SND30_Document.pdf
 │   ├── processed/                     # Données nettoyées et prétraitées
 │   │   ├── texts_2024.json
@@ -129,7 +129,7 @@ Projet-NLP/
 
 ---
 
-## 💻 Prérequis
+##  Prérequis
 
 ### Logiciels
 - **Python** : Version 3.8 ou supérieure
@@ -143,7 +143,7 @@ Projet-NLP/
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 ### 1. Cloner le Repository
 
@@ -234,7 +234,7 @@ TESTING CONFIGURATION
 
 ---
 
-## 📂 Données Requises
+##  Données Requises
 
 ### Documents à Placer dans `data/raw/`
 
@@ -242,8 +242,7 @@ Avant d'exécuter le projet, placez les documents suivants dans le dossier `data
 
 1. **Loi_de_Finances_2024.pdf** - Loi de Finances 2024 du Cameroun
 2. **Loi_de_Finances_2025.pdf** - Loi de Finances 2025 du Cameroun
-3. **Perspectives_2026.pdf** - Perspectives budgétaires 2026
-4. **SND30_Document.pdf** - Document de la Stratégie Nationale de Développement 2020-2030
+3. **SND30_Document.pdf** - Document de la Stratégie Nationale de Développement 2020-2030
 
 ### Sources
 
@@ -253,7 +252,7 @@ Ces documents peuvent être téléchargés depuis :
 
 ---
 
-## ▶️ Exécution du Projet
+##  Exécution du Projet
 
 ### Workflow Complet
 
@@ -324,7 +323,7 @@ Le dashboard s'ouvrira dans votre navigateur à l'adresse : `http://localhost:85
 
 ---
 
-## 📊 Résultats Attendus
+##  Résultats Attendus
 
 ### 1. Rapport Technique
 
@@ -367,7 +366,7 @@ Dans `outputs/figures/` :
 
 ---
 
-## 🛠️ Technologies Utilisées
+##  Technologies Utilisées
 
 ### NLP et Deep Learning
 - **Transformers** (Hugging Face) - Modèles CamemBERT, Sentence-BERT
@@ -398,7 +397,7 @@ Dans `outputs/figures/` :
 
 ---
 
-## 📈 Métriques de Performance
+##  Métriques de Performance
 
 Le projet évalue les modèles selon :
 
@@ -417,7 +416,7 @@ Le projet évalue les modèles selon :
 
 ---
 
-## 🧪 Tests
+##  Tests
 
 ### Exécuter les Tests
 
@@ -462,7 +461,7 @@ Le projet sera noté selon :
 
 ---
 
-## 🤝 Contribution
+##  Contribution
 
 ### Guide de Contribution
 
@@ -495,7 +494,7 @@ Le projet sera noté selon :
 
 ---
 
-## 📧 Contact
+##  Contact
 
 Pour toute question concernant le projet :
 
@@ -505,13 +504,13 @@ Pour toute question concernant le projet :
 
 ---
 
-## 📄 Licence
+##  Licence
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ---
 
-## 🙏 Remerciements
+##  Remerciements
 
 - **ISSEA Yaoundé** pour le cadre pédagogique
 - **Hugging Face** pour les modèles Transformers
@@ -520,7 +519,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ---
 
-## 📚 Bibliographie
+##  Bibliographie
 
 1. Devlin, J. et al. (2018). *BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding*. arXiv:1810.04805
 
@@ -532,7 +531,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ---
 
-## 🔗 Liens Utiles
+##  Liens Utiles
 
 - [Documentation Hugging Face Transformers](https://huggingface.co/docs/transformers)
 - [Documentation SpaCy](https://spacy.io/usage)
@@ -542,7 +541,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ---
 
-## ⚙️ Configuration Système Recommandée
+##  Configuration Système Recommandée
 
 ### Minimum
 - CPU : Intel Core i5 ou équivalent
@@ -558,7 +557,7 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de 
 
 ---
 
-## 🐛 Problèmes Connus et Solutions
+##  Problèmes Connus et Solutions
 
 ### Problème : Chemins trop longs sur Windows
 **Solution** : Activez les chemins longs Windows ([Guide](https://pip.pypa.io/warnings/enable-long-paths))
@@ -589,7 +588,7 @@ pip install -r requirements.txt --force-reinstall
 
 ---
 
-## 📊 État du Projet
+##  État du Projet
 
 - [x] Structure du projet
 - [x] Configuration de base
@@ -609,4 +608,4 @@ pip install -r requirements.txt --force-reinstall
 
 ---
 
-*Développé avec ❤️ par les étudiants ISE3 de l'ISSEA Yaoundé*
+*Développé par les étudiants ISE3 de l'ISSEA*
