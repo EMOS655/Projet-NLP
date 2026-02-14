@@ -1,0 +1,57 @@
+{
+    "conformity_score": 96.0,
+    "p_value": 8.846713808446963e-10,
+    "interpretation": "Le glissement sémantique est statistiquement significatif. On observe une forte concentration sur le pilier Transformation structurelle.",
+    "comparison_data": [
+        {
+            "pilier": "Transformation structurelle",
+            "valeur": 31.74,
+            "type": "Réel (Loi de Finances)"
+        },
+        {
+            "pilier": "Transformation structurelle",
+            "valeur": 30.0,
+            "type": "Objectifs SND30"
+        },
+        {
+            "pilier": "Capital humain",
+            "valeur": 15.09,
+            "type": "Réel (Loi de Finances)"
+        },
+        {
+            "pilier": "Capital humain",
+            "valeur": 25.0,
+            "type": "Objectifs SND30"
+        },
+        {
+            "pilier": "Gouvernance",
+            "valeur": 25.84,
+            "type": "Réel (Loi de Finances)"
+        },
+        {
+            "pilier": "Gouvernance",
+            "valeur": 20.0,
+            "type": "Objectifs SND30"
+        },
+        {
+            "pilier": "Développement régional",
+            "valeur": 15.87,
+            "type": "Réel (Loi de Finances)"
+        },
+        {
+            "pilier": "Développement régional",
+            "valeur": 15.0,
+            "type": "Objectifs SND30"
+        },
+        {
+            "pilier": "Autre",
+            "valeur": 11.46,
+            "type": "Réel (Loi de Finances)"
+        },
+        {
+            "pilier": "Autre",
+            "valeur": 10.0,
+            "type": "Objectifs SND30"
+        }
+    ]
+}

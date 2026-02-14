@@ -1,0 +1,79 @@
+{
+  "test_set": [
+    {
+      "pilier": "Transformation structurelle",
+      "articles": [
+        {"id": "TS01", "titre": "Soutien aux filières bois", "contenu": "Exonération des droits de douane sur les équipements de transformation poussée du bois de deuxième et troisième degré."},
+        {"id": "TS02", "titre": "Zones de restructuration industrielle", "contenu": "Allocation de fonds pour l'aménagement de zones industrielles à Edéa et Douala pour booster la production manufacturière."},
+        {"id": "TS03", "titre": "Promotion du Made in Cameroon", "contenu": "Majoration de 15% des droits d'accises sur les produits finis importés dont les substituts sont produits localement."},
+        {"id": "TS04", "titre": "Infrastructure énergétique", "contenu": "Financement des lignes de transport d'électricité pour connecter les bassins de production agricole aux unités de transformation."},
+        {"id": "TS05", "titre": "Soutien à l'agro-industrie", "contenu": "Crédit d'impôt pour les entreprises investissant dans la production de semences certifiées et d'engrais locaux."},
+        {"id": "TS06", "titre": "Développement minier", "contenu": "Redevance minière spécifique pour le financement des infrastructures de transport ferroviaire lié à l'exploitation du fer."},
+        {"id": "TS07", "titre": "Économie numérique", "contenu": "Subvention pour les incubateurs de start-ups technologiques spécialisées dans les solutions de paiement électronique."},
+        {"id": "TS08", "titre": "Infrastructures portuaires", "contenu": "Dotation budgétaire pour l'extension du terminal à conteneurs et la modernisation des dragues portuaires."},
+        {"id": "TS09", "titre": "Secteur textile", "contenu": "Mesures de protection tarifaire pour l'industrie du coton et incitations à la création d'unités de confection de vêtements."},
+        {"id": "TS10", "titre": "Innovation technologique", "contenu": "Déduction fiscale des dépenses de recherche et développement pour les entreprises de l'industrie chimique."}
+      ]
+    },
+    {
+      "pilier": "Capital humain",
+      "articles": [
+        {"id": "CH01", "titre": "Couverture Santé Universelle", "contenu": "Financement de la phase d'extension de la CSU pour inclure les pathologies chroniques et les soins néonataux."},
+        {"id": "CH02", "titre": "Enseignement technique", "contenu": "Construction et équipement de 10 nouveaux lycées techniques professionnels dans les chefs-lieux de région."},
+        {"id": "CH03", "titre": "Bourses d'excellence", "contenu": "Octroi de bourses d'études pour les étudiants en ingénierie et en intelligence artificielle dans les universités d'État."},
+        {"id": "CH04", "titre": "Santé maternelle", "contenu": "Programme national de lutte contre la mortalité maternelle via le recrutement de 2000 sages-femmes contractuelles."},
+        {"id": "CH05", "titre": "Alphabétisation fonctionnelle", "contenu": "Budget alloué aux centres de formation non-formelle pour l'apprentissage des métiers aux jeunes déscolarisés."},
+        {"id": "CH06", "titre": "Protection sociale", "contenu": "Revalorisation des filets sociaux pour les familles indigentes et les personnes vivant avec un handicap."},
+        {"id": "CH07", "titre": "Infrastructures sportives", "contenu": "Entretien des complexes sportifs nationaux et promotion du sport scolaire et universitaire."},
+        {"id": "CH08", "titre": "Recherche universitaire", "contenu": "Dotation spéciale pour les laboratoires de recherche travaillant sur les pharmacopées traditionnelles."},
+        {"id": "CH09", "titre": "Eau potable et assainissement", "contenu": "Réhabilitation des réseaux d'adduction d'eau en milieu urbain pour réduire les maladies hydriques."},
+        {"id": "CH10", "titre": "Emploi des jeunes", "contenu": "Soutien financier au programme d'insertion des diplômés de l'enseignement supérieur dans le secteur privé."}
+      ]
+    },
+    {
+      "pilier": "Gouvernance",
+      "articles": [
+        {"id": "GV01", "titre": "Réforme de l'administration", "contenu": "Budget pour la dématérialisation complète des procédures de passation des marchés publics (e-procurement)."},
+        {"id": "GV02", "titre": "Lutte contre la corruption", "contenu": "Renforcement des moyens d'action de la Commission Nationale Anti-Corruption (CONAC) pour les audits de terrain."},
+        {"id": "GV03", "titre": "Justice et État de droit", "contenu": "Construction de nouveaux tribunaux de grande instance et informatisation du casier judiciaire national."},
+        {"id": "GV04", "titre": "Gestion de la dette", "contenu": "Optimisation des mécanismes de remboursement de la dette intérieure pour restaurer la confiance des entreprises."},
+        {"id": "GV05", "titre": "Recettes fiscales", "contenu": "Modernisation des centres de collecte des impôts via l'implémentation de terminaux de paiement mobile."},
+        {"id": "GV06", "titre": "Diplomatie économique", "contenu": "Fonds pour le rayonnement du pays à l'international et la protection des ressortissants à l'étranger."},
+        {"id": "GV07", "titre": "Audit des entreprises publiques", "contenu": "Contrôle de performance des établissements publics pour réduire les subventions d'équilibre."},
+        {"id": "GV08", "titre": "Sécurité nationale", "contenu": "Modernisation des équipements des forces de maintien de l'ordre pour la surveillance des frontières."},
+        {"id": "GV09", "titre": "Statistiques nationales", "contenu": "Financement du recensement général de la population et de l'habitat pour une meilleure planification budgétaire."},
+        {"id": "GV10", "titre": "Fonction publique", "contenu": "Recensement biométrique des agents de l'État pour assainir le fichier solde et éliminer les agents fictifs."}
+      ]
+    },
+    {
+      "pilier": "Développement régional",
+      "articles": [
+        {"id": "DL01", "titre": "Dotation de décentralisation", "contenu": "Augmentation du pourcentage des recettes de l'État transférées aux Communes et Régions pour atteindre 15%."},
+        {"id": "DL02", "titre": "Routes rurales", "contenu": "Entretien des pistes de collecte pour désenclaver les zones de production agricole dans le bassin de la Sanaga."},
+        {"id": "DL03", "titre": "Électrification rurale", "contenu": "Installation de micro-centrales solaires dans les villages non connectés au réseau national."},
+        {"id": "DL04", "titre": "Infrastructures de proximité", "contenu": "Appui au financement des marchés périurbains et des gares routières municipales."},
+        {"id": "DL05", "titre": "Développement frontalier", "contenu": "Programme spécial de développement pour les zones limitrophes afin de stabiliser les populations."},
+        {"id": "DL06", "titre": "Gestion des déchets", "contenu": "Subvention aux collectivités territoriales pour la mise en place de systèmes de tri et de traitement des ordures."},
+        {"id": "DL07", "titre": "Urbanisme et habitat", "contenu": "Aménagement des espaces verts et des voiries secondaires dans les villes moyennes en pleine croissance."},
+        {"id": "DL08", "titre": "Tourisme local", "contenu": "Valorisation des sites historiques régionaux pour dynamiser l'économie locale et artisanale."},
+        {"id": "DL09", "titre": "Agriculture urbaine", "contenu": "Projets de ceintures maraîchères autour des métropoles pour assurer la sécurité alimentaire locale."},
+        {"id": "DL10", "titre": "Gouvernance locale", "contenu": "Formation des élus locaux à la gestion des finances publiques et au montage de projets de développement."}
+      ]
+    },
+    {
+      "pilier": "Autre",
+      "articles": [
+        {"id": "AU01", "titre": "Frais de fonctionnement des services centraux", "contenu": "Dotation budgétaire pour l'acquisition de fournitures de bureau et le paiement des factures d'électricité des ministères."},
+        {"id": "AU02", "titre": "Dépenses de souveraineté", "contenu": "Allocation de fonds spéciaux pour les cérémonies officielles et les réceptions diplomatiques de la Présidence."},
+        {"id": "AU03", "titre": "Service de la dette extérieure", "contenu": "Paiement des intérêts et commissions liés aux emprunts contractés auprès des bailleurs de fonds internationaux."},
+        {"id": "AU04", "titre": "Dotation pour les cultes", "contenu": "Subvention annuelle accordée aux organisations religieuses pour l'entretien des lieux de prière nationaux."},
+        {"id": "AU05", "titre": "Budget de l'Assemblée Nationale", "contenu": "Crédits alloués au paiement des indemnités parlementaires et au fonctionnement des commissions législatives."},
+        {"id": "AU06", "titre": "Remboursement des crédits de TVA", "contenu": "Provision pour le reversement des surplus de taxe sur la valeur ajoutée aux entreprises exportatrices."},
+        {"id": "AU07", "titre": "Frais de justice et contentieux", "contenu": "Règlement des honoraires d'avocats et des dommages-intérêts suite aux condamnations de l'État devant les tribunaux."},
+        {"id": "AU08", "titre": "Gestion du patrimoine mobilier", "contenu": "Budget destiné à la maintenance du parc automobile administratif et à l'assurance des véhicules de fonction."},
+        {"id": "AU09", "titre": "Cotisations aux organismes internationaux", "contenu": "Versement des contributions obligatoires du pays au budget de l'ONU et de l'Union Africaine."},
+        {"id": "AU10", "titre": "Fonds de réserve pour imprévus", "contenu": "Dotation provisionnelle destinée à couvrir les dépenses urgentes non programmées lors de l'exercice budgétaire."}
+      ]
+    }
+  ]
+}
