@@ -13,8 +13,6 @@ if src_path not in sys.path:
     sys.path.insert(0, src_path)
 
 # --- IMPORTS ---
-# Maintenant, config est importé depuis la racine
-# Et les autres depuis le dossier src
 try:
     import config
     from extrator import PDFExtractor

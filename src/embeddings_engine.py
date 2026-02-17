@@ -98,7 +98,7 @@ if __name__ == "__main__":
                 # Statistiques rapides
                 n_ruptures = len(df_results[df_results['diagnostic'] == 'RUPTURE'])
                 print("\n" + "="*60)
-                print(f"✅ AUDIT PAR PLONGEMENTS TERMINÉ")
+                print(f" AUDIT PAR PLONGEMENTS TERMINÉ")
                 print(f" - Ruptures de discours détectées : {n_ruptures}")
                 print(f" - Taux de continuité sémantique : {((len(df_25)-n_ruptures)/len(df_25)):.1%}")
                 print(f" - Fichier généré : {save_path}")
