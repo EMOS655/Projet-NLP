@@ -68,8 +68,9 @@ Avant toute analyse, les données subissent une préparation rigoureuse pour gar
 - **Logique** : Classification automatique des lignes de dépenses dans les **4 piliers SND30** :
   - Transformation structurelle de l'économie
   - Développement du capital humain
-  - Gouvernance, décentralisation, gestion stratégique
-  - Développement régional et équilibré
+  - Gouvernance
+  - Développement régional
+  -Autre
 
 ### 3.  Analyse Statistique de Conformité
 
