@@ -1,11 +1,11 @@
-# Projet-NLP
-Intelligence artificielle et finance publique
-# Projet NLP ISE3 - Analyse Sémantique des Lois de Finances du Cameroun
+# 🇨🇲 Audit de Glissement Sémantique : LF 2024-2025 vs SND30
+**Intelligence Artificielle et Finances Publiques — Projet NLP ISE3 | ISSEA Yaoundé**
 
-**Intelligence Artificielle et Finances Publiques : Utilisation des modèles Transformers pour l'audit sémantique et la classification budgétaire**
+> Utilisation des modèles Transformers pour l'audit sémantique et la classification budgétaire des Lois de Finances du Cameroun au regard de la Stratégie Nationale de Développement 2020-2030 (SND30).
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-red.svg)](https://pytorch.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B.svg)](https://streamlit.io/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
@@ -13,55 +13,68 @@ Intelligence artificielle et finance publique
 ##  Table des Matières
 
 1. [Description du Projet](#-description-du-projet)
-2. [Objectifs](#-objectifs)
-3. [Structure du Projet](#-structure-du-projet)
-4. [Prérequis](#-prérequis)
-5. [Installation](#-installation)
-6. [Données Requises](#-données-requises)
-7. [Exécution du Projet](#-exécution-du-projet)
-8. [Résultats Attendus](#-résultats-attendus)
-9. [Technologies Utilisées](#-technologies-utilisées)
-10. [Auteurs](#-auteurs)
-11. [Contact](#-contact)
+2. [Problématique](#-problématique)
+3. [Pipeline Analytique](#-pipeline-analytique-méthodologie)
+4. [Structure du Projet](#-structure-du-projet)
+5. [Prérequis](#-prérequis)
+6. [Installation](#-installation)
+7. [Données Requises](#-données-requises)
+8. [Guide d'Exécution](#️-guide-dexécution)
+9. [Architecture des Résultats](#-architecture-des-résultats)
+10. [Technologies Utilisées](#-technologies-utilisées)
+11. [Métriques de Performance](#-métriques-de-performance)
+12. [Tests](#-tests)
+13. [Auteurs](#-auteurs)
 
 ---
 
 ##  Description du Projet
 
-Ce projet vise à analyser les **Lois de Finances du Cameroun** (2024-2026) en utilisant des techniques avancées de **Traitement du Langage Naturel (NLP)** et des modèles **Transformers**. L'objectif est de mesurer l'évolution des priorités budgétaires de l'État et de vérifier leur alignement avec la **Stratégie Nationale de Développement 2020-2030 (SND30)**.
+Ce projet vise à quantifier le glissement sémantique entre les intentions stratégiques de la SND30 et les allocations budgétaires réelles des Lois de Finances du Cameroun (2024-2025). Il mobilise des techniques avancées de Traitement du Langage Naturel (NLP) et des modèles Transformers pour mesurer l'évolution des priorités budgétaires de l'État et vérifier leur alignement avec la Stratégie Nationale de Développement 2020-2030 (SND30).
 
 ### Contexte
 
 Dans le cadre de la SND30, la Loi de Finances constitue l'instrument pivot de la politique économique du Cameroun. La complexité et le volume des documents textuels rendent difficile l'évaluation rapide de la cohérence sémantique entre les budgets annuels et les objectifs stratégiques de l'État.
 
-### Problématique
+---
 
-**Comment l'intelligence artificielle, à travers le NLP, peut-elle mesurer mathématiquement l'évolution des priorités de l'État camerounais entre la Loi de Finances 2024 et les perspectives de 2025-2026 ?**
+##  Problématique
 
-Existe-t-il un alignement statistiquement significatif entre le discours budgétaire et les piliers de la SND30 ?
+**Comment l'intelligence artificielle, à travers le NLP, peut-elle mesurer mathématiquement l'évolution des priorités de l'État camerounais entre la Loi de Finances 2024 et 2025 ?**
+
+Existe-t-il un alignement statistiquement significatif entre le discours budgétaire annuel et les piliers de la SND30 ?
 
 ---
 
-##  Objectifs
+##  Pipeline Analytique (Méthodologie)
 
-Le projet s'articule autour de **trois axes principaux** :
+Le projet est structuré en **trois piliers scientifiques majeurs**, précédés d'une phase intensive de traitement des données.
 
-### 1.  Audit Sémantique par Embeddings
-- Utiliser **Sentence-BERT** pour calculer la similarité cosinus entre les articles de loi 2024 et 2025
-- Identifier les ruptures de discours et le "glissement sémantique"
-- Visualiser l'évolution thématique entre les années
+###  Phase 0 — Traitement Intensif des Données
 
-### 2. Classification Zero-Shot
-- Classer automatiquement les lignes de dépenses dans les 4 piliers de la SND30 :
-  - **Transformation structurelle**
-  - **Capital humain**
-  - **Gouvernance**
-  - **Développement régional**
+Avant toute analyse, les données subissent une préparation rigoureuse pour garantir l'intégrité des résultats :
+
+- **Extraction de Structure** (`extractor.py`) : Récupération des données tabulaires et textuelles à partir des documents PDF officiels.
+
+### 1.  Audit Sémantique par Plongements (Embeddings)
+
+- **Technologie** : Sentence-BERT (`paraphrase-multilingual-MiniLM-L12-v2`)
+- **Logique** : Transformation des articles de loi en vecteurs numériques de haute dimension.
+- **Analyse** : Calcul de la similarité cosinus entre les articles de 2024 et 2025 pour détecter les ruptures de discours (scores inférieurs à **0.70**).
+
+### 2.  Classification sous Contrainte (Zero-Shot Learning)
+
+- **Technologie** : Inférence sémantique (NLI)
+- **Logique** : Classification automatique des lignes de dépenses dans les **4 piliers SND30** :
+  - Transformation structurelle de l'économie
+  - Développement du capital humain
+  - Gouvernance, décentralisation, gestion stratégique
+  - Développement régional et équilibré
 
 ### 3.  Analyse Statistique de Conformité
-- Corréler les fréquences thématiques extraites avec les montants financiers réels
-- Effectuer des tests de significativité statistique
-- Analyser l'alignement Budget-SND30
+
+- **Technologie** : Corrélation financière et tests du Khi-deux
+- **Logique** : Croisement des fréquences thématiques prédites par l'IA avec les montants financiers (FCFA) du Budget d'Investissement Public (BIP). Calcul d'un score de conformité global.
 
 ---
 
@@ -74,46 +87,48 @@ Projet-NLP/
 ├── LICENSE                            # Licence du projet
 ├── .gitignore                         # Fichiers à ignorer par Git
 ├── requirements.txt                   # Dépendances Python
-├── requirements_minimal.txt           # Dépendances minimales
 ├── config.py                          # Configuration centrale du projet
 ├── env_config.py                      # Gestion des variables d'environnement
-├── .env.example                       # Template pour variables sensibles
-├── test_config.py                     # Script de test de configuration
+├── Diagnostic_donnees.py              # Script de diagnostic des données
 │
 ├── data/                              # Données du projet
-│   ├── raw/                           # PDFs bruts (Lois de Finances)
+│   ├── raw/                           # PDFs bruts (documents officiels)
 │   │   ├── Loi_de_Finances_2024.pdf
 │   │   ├── Loi_de_Finances_2025.pdf
-│   │   |
 │   │   └── SND30_Document.pdf
+│   ├── labeled/                       # Données annotées
 │   ├── processed/                     # Données nettoyées et prétraitées
-│   │   ├── texts_2024.json
-│   │   ├── texts_2025.json
-│   │   └── texts_2026.json
-│   └── results/                       # Résultats des analyses
-│       ├── similarities.csv
-│       ├── classifications.csv
-│       └── statistics.json
+│   ├── test/                          # Données de test
+│   └── results/                       # Sorties des analyses IA
+│       ├── audit_results.csv          # Résultats de classification (piliers)
+│       ├── ruptures_semantiques.csv   # Détection des ruptures de discours
+│       ├── financial_analysis_clean.csv # Corrélation budgétaire nettoyée
+│       ├── statistical_conformity.json  # Scores et radar de conformité SND30
+│       ├── all_processed_data.json    # Données consolidées + métriques
+│       └── roc_curves.json            # Courbes ROC par pilier
 │
 ├── src/                               # Code source principal
 │   ├── __init__.py                    # Initialisation du package
-│   ├── preprocessing.py               # Extraction et nettoyage des PDFs
-│   ├── embeddings.py                  # Calculs de similarité sémantique
-│   ├── classification.py              # Classification zero-shot
-│   ├── statistical_analysis.py        # Analyses statistiques
-│   └── utils.py                       # Fonctions utilitaires
+│   ├── extrator.py                    # Extraction des textes et tableaux PDF
+│   ├── main.py                        # Nettoyage, normalisation, lemmatisation
+│   ├── embeddings_engine.py           # Similarité cosinus & détection de ruptures
+│   ├── classifier.py                  # Labels et logique de classification
+│   ├── semantic_engine.py             # Classification multi-piliers SND30
+│   ├── financial_correlation.py       # Corrélation prédictions IA / montants FCFA
+│   ├── stat_analysis.py               # Scores de conformité, Chi-deux, radar
+│   └── utils.py                       # Fonctions utilitaires partagées
 │
-├── models/                            # Modèles sauvegardés
-│   ├── pretrained/                    # Modèles pré-entraînés téléchargés
-│   └── finetuned/                     # Modèles fine-tunés (si applicable)
+├── dashboard/                         # Application Streamlit
+│   └── app.py                         # Dashboard interactif (3 onglets)
 │
-├── notebooks/                         # Jupyter Notebooks
-│   ├── 01_exploration.ipynb           # Exploration des données
+├── notebooks/                         # Jupyter Notebooks exploratoires
+│   ├── 01_exploration.ipynb           # Exploration des données brutes
 │   ├── 02_preprocessing.ipynb         # Prétraitement détaillé
 │   └── 03_modelisation.ipynb          # Modélisation et analyse
 │
-├── dashboard/                         # Application Streamlit
-│   └── app.py                         # Dashboard interactif
+├── models/                            # Modèles sauvegardés
+│   ├── pretrained/                    # Modèles pré-entraînés
+│   └── finetuned/                     # Modèles fine-tunés (si applicable)
 │
 ├── outputs/                           # Outputs générés
 │   ├── figures/                       # Graphiques et visualisations
@@ -121,10 +136,9 @@ Projet-NLP/
 │   └── reports/                       # Rapports générés
 │
 ├── tests/                             # Tests unitaires
-│   └── test_preprocessing.py
-│
-└── logs/                              # Fichiers de logs
-    └── nlp_project.log
+├── logs/                              # Fichiers de logs
+│   └── nlp_project.log
+└── nlpenv/                            # Environnement virtuel Python (ignoré par Git)
 ```
 
 ---
@@ -134,7 +148,7 @@ Projet-NLP/
 ### Logiciels
 - **Python** : Version 3.8 ou supérieure
 - **Git** : Pour cloner le repository
-- **GPU (optionnel)** : NVIDIA GPU avec CUDA pour accélération (recommandé mais pas obligatoire)
+- **GPU (optionnel)** : NVIDIA GPU avec CUDA pour accélération (recommandé)
 
 ### Connaissances
 - Bases en Python
@@ -148,54 +162,36 @@ Projet-NLP/
 ### 1. Cloner le Repository
 
 ```bash
-# Clonez le projet
-git clone https://github.com/votre-username/Projet-NLP.git
-
-# Naviguez dans le dossier
+git clone : https://github.com/EMOS655/Projet-NLP.git
 cd Projet-NLP
 ```
 
 ### 2. Créer l'Environnement Virtuel
 
 ```bash
-# Créez un environnement virtuel nommé nlpenv
 python -m venv nlpenv
 
-# Activez l'environnement virtuel
-
-# Sur Windows PowerShell :
+# Windows PowerShell :
 .\nlpenv\Scripts\Activate.ps1
 
-# Sur Windows CMD :
+# Windows CMD :
 nlpenv\Scripts\activate.bat
 
-# Sur Linux/Mac :
+# Linux/Mac :
 source nlpenv/bin/activate
 ```
 
-**Note pour Windows** : Si vous obtenez une erreur de politique d'exécution PowerShell, exécutez :
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
+> **Note Windows** : En cas d'erreur de politique d'exécution, exécutez :
+> ```powershell
+> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+> ```
 
 ### 3. Installer les Dépendances
 
-**Option A : Installation complète (recommandée)**
 ```bash
-# Mettez à jour pip
 python -m pip install --upgrade pip
-
-# Installez toutes les dépendances
 pip install -r requirements.txt
 ```
-
-**Option B : Installation minimale (si problèmes de chemins longs sur Windows)**
-```bash
-# Installez les dépendances essentielles
-pip install -r requirements_minimal.txt
-```
-
-**Note** : Si vous rencontrez l'erreur de chemins trop longs sur Windows, consultez [ce guide](https://pip.pypa.io/warnings/enable-long-paths) pour activer les chemins longs.
 
 ### 4. Télécharger le Modèle SpaCy Français
 
@@ -203,304 +199,149 @@ pip install -r requirements_minimal.txt
 python -m spacy download fr_core_news_md
 ```
 
-### 5. Configurer les Variables d'Environnement (Optionnel)
+### 5. Vérifier l'Installation
 
 ```bash
-# Copiez le fichier template
-cp .env.example .env
-
-# Éditez .env et ajoutez vos clés API si nécessaire
-# HUGGINGFACE_TOKEN=votre_token_ici
-```
-
-### 6. Vérifier l'Installation
-
-```bash
-# Testez la configuration
-python test_config.py
-```
-
-Vous devriez voir :
-```
-================================================================================
-TESTING CONFIGURATION
-================================================================================
-[1/6] Testing config import...
-✓ Config imported successfully
-...
-✓ All tests passed!
-✓ Configuration is ready to use
+python config.py
 ```
 
 ---
 
 ##  Données Requises
 
-### Documents à Placer dans `data/raw/`
+Placez les documents suivants dans `data/raw/` avant toute exécution :
 
-Avant d'exécuter le projet, placez les documents suivants dans le dossier `data/raw/` :
-
-1. **Loi_de_Finances_2024.pdf** - Loi de Finances 2024 du Cameroun
-2. **Loi_de_Finances_2025.pdf** - Loi de Finances 2025 du Cameroun
-3. **SND30_Document.pdf** - Document de la Stratégie Nationale de Développement 2020-2030
-
-### Sources
-
-Ces documents peuvent être téléchargés depuis :
-- **Site du MINFI** : [https://www.minfi.cm](https://www.minfi.cm)
-- **Site du MINEPAT** : [https://www.minepat.gov.cm](https://www.minepat.gov.cm)
+| Fichier | Description | Source |
+|---|---|---|
+| `Loi_de_Finances_2024.pdf` | Loi de Finances 2024 du Cameroun | [MINFI](https://www.minfi.cm) |
+| `Loi_de_Finances_2025.pdf` | Loi de Finances 2025 du Cameroun | [MINFI](https://www.minfi.cm) |
+| `SND30_Document.pdf` | Stratégie Nationale de Développement 2020-2030 | [MINEPAT](https://www.minepat.gov.cm) |
 
 ---
 
-##  Exécution du Projet
+##  Guide d'Exécution
 
-### Workflow Complet
+Les scripts doivent être exécutés **dans l'ordre suivant** pour garantir la génération correcte des données du Dashboard.
 
-Le projet doit être exécuté dans l'ordre suivant :
-
-#### **Étape 1 : Exploration des Données** 📊
+### Étape A — Extraction & Nettoyage
 
 ```bash
-# Ouvrez le premier notebook
-jupyter notebook notebooks/01_exploration.ipynb
+# 1. Extraction brute des textes et tableaux depuis les PDFs
+python src/extrator.py
 
-# Ou lancez Jupyter Lab
-jupyter lab
+
 ```
 
-**Ce notebook permet de :**
-- Charger et visualiser les PDFs
-- Obtenir des statistiques descriptives
-- Comprendre la structure des documents
-
-#### **Étape 2 : Prétraitement** 🔧
+### Étape B — Moteurs d'Analyse IA
 
 ```bash
-# Exécutez le notebook de prétraitement
-jupyter notebook notebooks/02_preprocessing.ipynb
+# 3. Génère l'analyse des ruptures sémantiques → ruptures_semantiques.csv
+python src/embeddings_engine.py
+
+# 4. Initialise les labels et la logique de classification
+python src/classifier.py
+
+# 5. Exécute la classification multi-piliers SND30 → audit_results.csv
+python src/semantic_engine.py
+```
+### Execution de toutes les etapes
+python src/main.py
+
+### Étape C — Corrélation & Statistiques
+
+```bash
+# 6. Lie les prédictions IA aux montants financiers → financial_analysis_clean.csv
+python src/financial_correlation.py
+
+# 7. Calcule les scores finaux et le radar de conformité → statistical_conformity.json
+python src/stat_analysis.py
 ```
 
-**Ce notebook effectue :**
-- Extraction de texte depuis les PDFs
-- Nettoyage et normalisation
-- Segmentation en phrases/paragraphes
-- Sauvegarde dans `data/processed/`
-
-**Ou exécutez directement le script :**
-```bash
-python -c "from src.preprocessing import preprocess_all_documents; preprocess_all_documents()"
-```
-
-#### **Étape 3 : Modélisation et Analyse** 🤖
+### Étape D — Visualisation
 
 ```bash
-# Exécutez le notebook de modélisation
-jupyter notebook notebooks/03_modelisation.ipynb
-```
-
-**Ce notebook réalise :**
-- Calcul des embeddings avec Sentence-BERT
-- Analyse de similarité sémantique
-- Classification zero-shot dans les piliers SND30
-- Tests statistiques de conformité
-- Génération des visualisations
-
-#### **Étape 4 : Dashboard Interactif** 📈
-
-```bash
-# Lancez le dashboard Streamlit
+# 8. Lance le Dashboard interactif
 streamlit run dashboard/app.py
 ```
 
-Le dashboard s'ouvrira dans votre navigateur à l'adresse : `http://localhost:8501`
-
-**Fonctionnalités du dashboard :**
-- Baromètre de glissement sémantique 2024-2026
-- Visualisation des similarités entre années
-- Distribution des budgets par pilier SND30
-- Statistiques de conformité
-- Graphiques interactifs
+Le dashboard s'ouvrira à : `http://localhost:8501`
 
 ---
 
-##  Résultats Attendus
+##  Architecture des Résultats
 
-### 1. Rapport Technique
+Le Dashboard Streamlit (3 onglets) consomme les sorties suivantes dans `data/results/` :
 
-Un document détaillant :
-- Architecture du modèle utilisé
-- Métriques de performance (F1-score, Precision, Recall, Log-Loss)
-- Analyses des lois de finances
-- Tests statistiques effectués
-- Interprétation des résultats
-
-**Localisation** : `outputs/reports/rapport_technique.pdf`
-
-### 2. Code Source Documenté
-
-- Disponible sur GitHub
-- Code commenté et structuré
-- Reproductible
-
-### 3. Dashboard Interactif
-
-- Baromètre de glissement sémantique
-- Visualisations dynamiques
-- Métriques en temps réel
-
-### 4. Fichiers de Résultats
-
-Dans `data/results/` :
-- `similarities.csv` : Matrice de similarité entre documents
-- `classifications.csv` : Classification des dépenses par pilier
-- `statistics.json` : Résultats des tests statistiques
-- `semantic_drift.json` : Mesures de glissement sémantique
-
-### 5. Visualisations
-
-Dans `outputs/figures/` :
-- Heatmaps de similarité
-- Graphiques de distribution budgétaire
-- Clustering des thèmes
-- Évolution temporelle des priorités
+| Fichier | Onglet Dashboard | Contenu |
+|---|---|---|
+| `ruptures_semantiques.csv` |  Audit Sémantique | Score de similarité cosinus et diagnostic RUPTURE / CONTINUITÉ |
+| `audit_results.csv` |  Classification | Répartition volumétrique et thématique des projets par pilier |
+| `financial_analysis_clean.csv` |  Analyse Financière | Montants FCFA croisés avec les piliers prédits |
+| `statistical_conformity.json` |  Analyse Financière | Score de conformité SND30, test Khi-deux, données du radar |
+| `all_processed_data.json` |  Classification | Métriques du modèle (Accuracy, F1, Log-Loss) |
+| `roc_curves.json` |  Classification | Courbes ROC et AUC par pilier SND30 |
 
 ---
 
 ##  Technologies Utilisées
 
-### NLP et Deep Learning
-- **Transformers** (Hugging Face) - Modèles CamemBERT, Sentence-BERT
-- **PyTorch** - Framework de deep learning
-- **SpaCy** - Traitement du langage naturel pour le français
+### NLP & Deep Learning
+- **Transformers** (Hugging Face) — CamemBERT, Sentence-BERT (`paraphrase-multilingual-MiniLM-L12-v2`)
+- **PyTorch** — Framework de deep learning
+- **SpaCy** — Traitement du langage naturel pour le français
 
 ### Data Science
-- **Pandas** - Manipulation de données
-- **NumPy** - Calculs numériques
-- **Scikit-learn** - Machine learning et statistiques
-- **SciPy** - Analyses statistiques avancées
+- **Pandas** / **NumPy** — Manipulation et calculs
+- **Scikit-learn** — Machine learning et statistiques
+- **SciPy** — Tests statistiques avancés (Khi-deux)
 
-### Clustering
-- **HDBSCAN** - Clustering hiérarchique
-- **UMAP** - Réduction de dimensionnalité
-
-### Visualisation
-- **Matplotlib** - Graphiques statiques
-- **Seaborn** - Visualisations statistiques
-- **Plotly** - Graphiques interactifs
-
-### Dashboard
-- **Streamlit** - Interface web interactive
+### Visualisation & Dashboard
+- **Plotly** — Graphiques interactifs (histogramme, barres, ROC, radar, sunburst)
+- **Streamlit** — Interface web interactive (3 onglets)
 
 ### Traitement PDF
-- **pdfplumber** - Extraction de texte depuis PDFs
-- **PyPDF2** - Manipulation de fichiers PDF
+- **pdfplumber** — Extraction de texte et tableaux depuis PDFs
+- **PyPDF2** — Manipulation de fichiers PDF
 
 ---
 
 ##  Métriques de Performance
 
-Le projet évalue les modèles selon :
+| Métrique | Description |
+|---|---|
+| **Accuracy** | Taux de réussite global de la classification |
+| **F1-Score (Micro)** | Mesure harmonique précision/rappel |
+| **Log-Loss** | Incertitude du modèle (plus bas = meilleur) |
+| **AUC-ROC** | Pouvoir discriminant par pilier SND30 |
+| **Similarité Cosinus** | Score de cohérence sémantique (0–1) |
 
-- **F1-Score** : Mesure de précision et rappel
-- **Precision** : Exactitude des classifications
-- **Recall** : Couverture des classifications
-- **Accuracy** : Taux de réussite global
-- **Log-Loss** : Perte logarithmique
-- **Cosine Similarity** : Similarité sémantique (0-1)
 
-**Seuils définis** :
-- Similarité haute : > 0.85
-- Similarité moyenne : 0.70 - 0.85
-- Similarité faible : < 0.70
-- Glissement sémantique : < 0.50
-
----
 
 ##  Tests
-
-### Exécuter les Tests
 
 ```bash
 # Tous les tests
 pytest tests/
 
-# Test spécifique
-pytest tests/test_preprocessing.py
-
 # Avec couverture
 pytest --cov=src tests/
 ```
-
-### Tests Disponibles
-
-- `test_preprocessing.py` - Tests d'extraction et nettoyage PDF
-- `test_embeddings.py` - Tests de calcul de similarité
-- `test_classification.py` - Tests de classification
-- `test_config.py` - Tests de configuration
-
----
-
-## 📝 Critères d'Évaluation
-
-Le projet sera noté selon :
-
-### 1. Démarche Scientifique (40%)
-- Originalité de l'approche
-- Rigueur méthodologique
-- Justification des choix techniques
-
-### 2. Reproductibilité du Code (30%)
-- Clarté du code
-- Documentation
-- Possibilité de reproduire les résultats
-
-### 3. Qualité d'Écriture (30%)
-- Clarté du rapport
-- Pertinence des analyses
-- Synthèse et conclusions
-
----
-
-##  Contribution
-
-### Guide de Contribution
-
-1. Forkez le projet
-2. Créez une branche (`git checkout -b feature/amelioration`)
-3. Commitez vos changements (`git commit -m 'Ajout fonctionnalité'`)
-4. Pushez vers la branche (`git push origin feature/amelioration`)
-5. Ouvrez une Pull Request
-
-### Standards de Code
-
-- Suivez **PEP 8** pour Python
-- Documentez toutes les fonctions
-- Ajoutez des tests pour les nouvelles fonctionnalités
-- Utilisez des noms de variables explicites
 
 ---
 
 ## 👥 Auteurs
 
-**Groupe ISE3 - Promotion 2025-2026**
+**Groupe ISE3 — Promotion 2025-2026**
 
-- **Nom Prénom 1** - [Email](mailto:email1@example.com)
-- **Nom Prénom 2** - [Email](mailto:email2@example.com)
-- **Nom Prénom 3** - [Email](mailto:email3@example.com)
-- **Nom Prénom 4** - [Email](mailto:email4@example.com)
+- **FONKOUA NGANKE Voltaire** — [Email:voltairefonkoua@gmail.com]
+- **KALEFACK NCUEPI Sergeo** — [Email:kalefacksergeo@gmail.com]
+- **MABIALA Michée 3** — [Email:micheemabiala99@gmail.com]
+- **SOME Pascal** — [Email:student.pascal.some@issea-cemac.org]
 
-**Encadrant**
-- **MBIA NDI Marie Thérèse** - [mbialaura12@gmail.com](mailto:mbialaura12@gmail.com)
+**Superviseur** : **MBIA NDI Marie Thérèse** — [mbialaura12@gmail.com]
 
 ---
 
-##  Contact
-
-Pour toute question concernant le projet :
-
-- **Email** : mbialaura12@gmail.com
-- **Institution** : ISSEA - Yaoundé
-- **Date de soumission** : 17 février 2026
 
 ---
 
@@ -508,83 +349,14 @@ Pour toute question concernant le projet :
 
 Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
----
 
-##  Remerciements
-
-- **ISSEA Yaoundé** pour le cadre pédagogique
-- **Hugging Face** pour les modèles Transformers
-- **MINFI & MINEPAT** pour les données publiques
-- La communauté **Python NLP** pour les outils open-source
-
----
 
 ##  Bibliographie
 
 1. Devlin, J. et al. (2018). *BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding*. arXiv:1810.04805
-
 2. Martin, L. et al. (2020). *CamemBERT: a Tasty French Language Model*. Proceedings of ACL 2020.
-
-3. République du Cameroun (2020). *Document de Stratégie Nationale de Développement 2020-2030 (SND30)*.
-
-4. Reimers, N. & Gurevych, I. (2019). *Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks*. EMNLP-IJCNLP 2019.
-
----
-
-##  Liens Utiles
-
-- [Documentation Hugging Face Transformers](https://huggingface.co/docs/transformers)
-- [Documentation SpaCy](https://spacy.io/usage)
-- [Guide PyTorch](https://pytorch.org/tutorials/)
-- [Streamlit Documentation](https://docs.streamlit.io/)
-- [Site MINFI Cameroun](https://www.minfi.cm)
-
----
-
-##  Configuration Système Recommandée
-
-### Minimum
-- CPU : Intel Core i5 ou équivalent
-- RAM : 8 GB
-- Stockage : 10 GB disponible
-- OS : Windows 10/11, Ubuntu 20.04+, macOS 10.15+
-
-### Recommandé
-- CPU : Intel Core i7 ou équivalent
-- RAM : 16 GB
-- GPU : NVIDIA GPU avec 6GB+ VRAM
-- Stockage : 20 GB disponible (SSD recommandé)
-
----
-
-##  Problèmes Connus et Solutions
-
-### Problème : Chemins trop longs sur Windows
-**Solution** : Activez les chemins longs Windows ([Guide](https://pip.pypa.io/warnings/enable-long-paths))
-
-### Problème : PyTorch n'utilise pas le GPU
-**Solution** : 
-```bash
-# Vérifiez la disponibilité CUDA
-python -c "import torch; print(torch.cuda.is_available())"
-
-# Installez la version CUDA de PyTorch
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
-```
-
-### Problème : SpaCy model non trouvé
-**Solution** :
-```bash
-python -m spacy download fr_core_news_md
-```
-
-### Problème : Erreur d'import de modules
-**Solution** :
-```bash
-# Vérifiez que l'environnement virtuel est activé
-# Réinstallez les dépendances
-pip install -r requirements.txt --force-reinstall
-```
+3. Reimers, N. & Gurevych, I. (2019). *Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks*. EMNLP-IJCNLP 2019.
+4. République du Cameroun (2020). *Document de Stratégie Nationale de Développement 2020-2030 (SND30)*.
 
 ---
 
@@ -592,20 +364,15 @@ pip install -r requirements.txt --force-reinstall
 
 - [x] Structure du projet
 - [x] Configuration de base
-- [ ] Prétraitement des données
-- [ ] Implémentation des embeddings
-- [ ] Classification zero-shot
-- [ ] Analyses statistiques
-- [ ] Dashboard Streamlit
-- [ ] Rapport technique
-- [ ] Tests unitaires
+- [x] Extraction et nettoyage des données (`extrator.py`, `main.py`)
+- [x] Moteur d'embeddings et détection de ruptures (`embeddings_engine.py`)
+- [x] Classification zero-shot multi-piliers (`classifier.py`, `semantic_engine.py`)
+- [x] Corrélation financière (`financial_correlation.py`)
+- [x] Analyses statistiques et score de conformité (`stat_analysis.py`)
+- [x] Dashboard Streamlit interactif (`dashboard/app.py`)
+- [x] Tests unitaires complets
+- [x] Rapport technique final
 
 ---
 
-**Dernière mise à jour** : Février 2026
-
-**Version** : 1.0.0
-
----
-
-*Développé par les étudiants ISE3 de l'ISSEA*
+*Développé par les étudiants ISE3 de l'ISSEA — Version 2.0.0 — Février 2026*

@@ -62,7 +62,7 @@ def run_full_audit():
 
     print("\n" + "="*60)
     print("   PIPELINE TERMINÉ AVEC SUCCÈS")
-    print("   Visualisation : streamlit run dashboard/app.py")
+    print("   Prochaine étape : python src/semantic_engine.py")
     print("="*60)
 
 if __name__ == "__main__":

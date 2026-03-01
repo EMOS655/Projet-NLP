@@ -62,7 +62,7 @@ class SemanticAudit:
 # --- 3. POINT D'ENTRÉE PRINCIPAL ---
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("   ISSEA - PIPELINE COMPLET : AUDIT & CLUSTERING")
+    print("  AUDIT & CLUSTERING")
     print("="*60)
     
     # Import de l'extracteur (après s'être assuré que le path est correct)
@@ -103,5 +103,5 @@ if __name__ == "__main__":
     else:
         print("\n[!] ERREUR : Aucun projet trouvé. Vérifiez le dossier data/raw/")
 
-    print("\n[Prochaine étape] : python src/stat_analysis.py")
+    print("\n[Prochaine étape] : python src/classifier.py")
     print("="*60)

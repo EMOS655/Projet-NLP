@@ -23,7 +23,7 @@ class StatAnalyzer:
 
     def run_analysis(self):
         print("\n" + "="*70)
-        print("   ISSEA - AUDIT SÉMANTIQUE : RÉSULTATS STATISTIQUES FINAUX")
+        print(" RÉSULTATS STATISTIQUES FINAUX")
         print("="*70)
 
         if not os.path.exists(self.input_file):
@@ -41,7 +41,7 @@ class StatAnalyzer:
         # On prend la moyenne des proportions sur tous les exercices pour la vue globale
         repartition_reelle = df['pilier_predit'].value_counts(normalize=True) * 100
         
-        # Cibles théoriques SND30 (ajustables)
+        # Cibles théoriques SND30
         cibles_snd30 = {
             "Transformation structurelle": 30.0,
             "Capital humain": 25.0,
