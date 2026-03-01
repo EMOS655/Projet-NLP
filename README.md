@@ -1,4 +1,4 @@
-# 🇨🇲 Audit de Glissement Sémantique : LF 2024-2025 vs SND30
+# IA Audit de Glissement Sémantique : LF 2024-2025 vs SND30
 **Intelligence Artificielle et Finances Publiques — Projet NLP ISE3 | ISSEA Yaoundé**
 
 > Utilisation des modèles Transformers pour l'audit sémantique et la classification budgétaire des Lois de Finances du Cameroun au regard de la Stratégie Nationale de Développement 2020-2030 (SND30).
